@@ -1,0 +1,13 @@
+解压后，将“inc”目录放置在任意位置，只要在工程中用“#include”指令包含“gcoreui.h”即可（具体操作依赖于所采用的编译环境）。
+通用的使用方法是将“inc”目录内的所有文件复制到工程源码所在文件夹，然后在需要使用LAP的文件中“#include”指令包含“gcoreui.h”。
+
+例如：
+当前项目所在目录为“X:\ProjectSample\”，其中“X:\ProjectSample\demo.cpp”需要使用LAP，
+则将“inc”文件夹内文件复制到“X:\ProjectSample\”，然后在demo.cpp的开头处加入
+
+#include "gcoreui.h"
+
+即可正常使用LAP。
+其他更灵活的使用方法，请参考您的编译环境。
+
+注：本版本LAP_for_win采用Debug Win32模式编译，所以其他的编译模式会引起连接错误，参见编译环境的设置。
